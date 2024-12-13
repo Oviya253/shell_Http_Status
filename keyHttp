@@ -1,0 +1,10 @@
+first variable --->paste guvi.in url
+echo -->used to print
+Curl --> in a bash script to capture the HTTP status code of a URL without downloading the entire content (simply its used to make a HTTP request )
+/dev/null -- discards data
+-w "%{http_code}" ---> -w customize the output and http string tells the curl to take only http code : ex 200, 300
+-s - silently supresses the progress and error msg
+200 -299 success
+300-399 redirecting to another page
+400 -499 client side error ex: bad req, not found, unauthorised 
+500-599 server side error: bad gateway, internal server error, service unavailable from the server
